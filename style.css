@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  height: 100vh;
+}
+
+/* Sol panel */
+.sidebar {
+  width: 30%;
+  background-color: #993399;
+  color: white;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Sağ içerik */
+.content {
+  width: 70%;
+  background-color: #d6cdea; 
+  padding: 40px;
+  box-sizing: border-box;
+  color: black;
+}
