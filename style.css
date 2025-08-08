@@ -7,35 +7,35 @@
 }
 
 html, body {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  display: flex;
   overflow: hidden;
 }
 
-/* SABİT SOL PANEL */
+/* Sol Panel */
 .sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
   width: 300px;
-  height: 100vh;
   background-color: #993399;
   color: white;
   padding: 40px 30px;
+  height: 100vh;
   overflow: hidden;
+  flex-shrink: 0;
 }
 
-/* SAĞ PANEL */
+/* Sağ Panel */
 .content {
-  margin-left: 300px; /* Sidebar kadar boşluk bırakıyoruz */
-  height: 100vh;
+  flex: 1;
   background-color: #d6cdea;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   overflow: hidden;
 }
 
-/* ÜST MENÜ */
+/* Navbar */
 .navbar {
   background-color: #a4e4ef;
   display: flex;
@@ -50,7 +50,7 @@ html, body {
   font-weight: bold;
 }
 
-/* PROJELER BÖLÜMÜ */
+/* Proje listesi */
 .projects {
   flex: 1;
   overflow-y: auto;
@@ -60,7 +60,7 @@ html, body {
   gap: 40px;
 }
 
-/* PROJE KARTI */
+/* Proje Kartı */
 .project-card {
   display: flex;
   gap: 20px;
