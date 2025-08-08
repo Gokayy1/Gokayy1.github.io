@@ -10,10 +10,10 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
   display: flex;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
-/* Sabit Sidebar */
+/* SOL PANEL */
 .sidebar {
   width: 30%;
   background-color: #993399;
@@ -24,12 +24,69 @@ html, body {
   overflow: hidden;
 }
 
-/* İçerik */
+/* SAĞ PANEL */
 .content {
-  margin-left: 30%; 
+  margin-left: 30%;
   width: 70%;
   background-color: #d6cdea;
-  padding: 40px;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: #a4e4ef; /* turkuaz gibi */
+  display: flex;
+  padding: 10px 20px;
+  gap: 20px;
+  border-bottom: 2px solid #993399;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* PROJELER BÖLÜMÜ */
+.projects {
+  flex: 1;
   overflow-y: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* PROJE KARTI */
+.project-card {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+
+.project-image {
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.project-info h3 {
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: #111;
 }
