@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-body {
+* {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Sol panel */
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  overflow: hidden; 
+}
+
+/* Sabit Sidebar */
 .sidebar {
   width: 30%;
   background-color: #993399;
   color: white;
   padding: 40px;
-  box-sizing: border-box;
+  position: fixed;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* Sağ içerik */
+/* İçerik */
 .content {
+  margin-left: 30%; 
   width: 70%;
-  background-color: #d6cdea; 
+  background-color: #d6cdea;
   padding: 40px;
-  box-sizing: border-box;
-  color: black;
+  height: 100vh;
+  overflow-y: auto;
 }
