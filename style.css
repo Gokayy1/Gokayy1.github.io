@@ -17,17 +17,17 @@ html, body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 30%;
+  width: 300px;
   height: 100vh;
   background-color: #993399;
   color: white;
-  padding: 40px;
+  padding: 40px 30px;
   overflow: hidden;
 }
 
 /* SAĞ PANEL */
 .content {
-  margin-left: 30%; /* sidebar kadar sola boşluk bırak */
+  margin-left: 300px; /* Sidebar kadar boşluk bırakıyoruz */
   height: 100vh;
   background-color: #d6cdea;
   display: flex;
