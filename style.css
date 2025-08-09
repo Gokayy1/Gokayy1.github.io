@@ -90,3 +90,18 @@ html, body {
 .project-info p {
   color: #111;
 }
+
+.project-actions { margin-top: 12px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: #6b1d6b; /* mor ailesi */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .05s ease, opacity .2s ease;
+}
+.btn:hover { opacity: .9; }
+.btn:active { transform: translateY(1px); }
